@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200&display=swap');
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --magenta: hsl(300, 69%, 71%);
+    --poppins: 'Poppins', sans-serif;
+    --Open-sans: 'Open Sans', sans-serif;
+    --white: hsl(0, 0, 98%);
+
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url('./bg-desktop.svg');
+    background-color: var(--violet);
+}
+.whole {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 90%;
+    height: auto;
+}
+.head {
+    color: white;
+    font-family: var(--poppins);
+    font-weight: 1000;
+    font-size: 2rem;
+}
+.main {
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+}
+.img {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+}
+img {
+    width: 90%;
+    height: auto;
+}
+.writeup {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+.two {
+    color: white;
+    font-family: var(--poppins);
+    font-weight: bold;
+    font-size: 2rem;
+}
+.pg {
+    color: white;
+    font-family: var(--Open-sans);
+}
+.button {
+    border-radius: 20px;
+    padding: 0.3rem 1.5rem;
+    font-size: 1rem;
+    font-family: var(--Open-sans);
+    color: var(--magenta);
+    box-shadow: 3px 3px 5px #333;
+    margin: 1rem 0;
+    border: 1px solid white;
+    width: 30%;
+    font-weight: bold;
+}
+footer {
+    display: inline-block;
+    color: white;
+}
+.icons {
+    text-align: right;
+}
+.fa-brands {
+    margin: 0.5rem;
+}
+@media screen and (max-width:800px) {
+    .whole {
+        text-align: center;
+    }
+    .head {
+        font-size: 2.5rem;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .icons {
+        text-align: center;
+    }
+    .button {
+        width: 40%;
+    }
+}
